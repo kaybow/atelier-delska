@@ -4,11 +4,6 @@ html {
 
 .logo {
   width: 6em;
-  fill: black;
-}
-
-svg {
-  fill: black;
 }
 
 a {
@@ -16,7 +11,17 @@ a {
   color: black;
 }
 
-nav a:after, .top a:after {
+header nav, .social, .top, .email {
+  text-align: right;
+}
+
+header ol li {
+  display:inline-block;
+  padding-left: 1rem;
+}
+
+
+header nav a:after, .top a:after {
   content: '';
   display: block;
   margin: auto;
@@ -26,16 +31,33 @@ nav a:after, .top a:after {
   transition: width .5s ease, background-color .5s ease;
 }
 
-a:hover:after {
-  width: 100%;
+header nav a:hover:after {
+  width: 80%;
   background: black;
 }
 
-ol li {
-  display:inline-block;
-  padding-left: 1rem;
+footer ol li {
+  display: inline-block;
 }
 
-nav {
-  text-align: right;
+@media only screen and (min-width: 15em) {
+
+  header nav {
+    text-align: center;
+  }
+
+  header ol li {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+
+  header nav {
+    text-align: right;
+  }
+
+  header ol li {
+    display: inline-block;
+  }
 }
