@@ -2,19 +2,40 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  margin-right: 3em;
-  margin-left: 3em;
-}
-
 .logo {
   width: 6em;
+  fill: black;
+}
+
+svg {
+  fill: black;
 }
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+nav a:after, .top a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+a:hover:after {
+  width: 100%;
+  background: black;
 }
 
 ol li {
   display:inline-block;
+  padding-left: 1rem;
+}
+
+nav {
+  text-align: right;
 }

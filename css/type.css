@@ -702,6 +702,10 @@ legend {
     margin-bottom: 1.4rem;
   }
 
+  .push-t {
+    margin-top: 1.4rem;
+  }
+
   .push-none,
   .push-0 {
     margin-bottom: 0;
@@ -755,6 +759,11 @@ legend {
   .push-right,
   .push-r {
     margin-right: 1.4rem;
+  }
+
+ .push-left,
+  .push-l {
+    margin-left: 1.4rem;
   }
 
   .pad-top,
