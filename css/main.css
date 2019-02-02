@@ -1,7 +1,20 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
 .logo {
   width: 6em;
 }
 
 a {
   text-decoration: none;
+}
+
+ol li {
+  display:inline-block;
 }
