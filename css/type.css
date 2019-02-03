@@ -1604,6 +1604,16 @@ legend {
     padding-top: 1.5rem;
   }
 
+  .pad-left,
+  .pad-l {
+    padding-left: 1.5rem;
+  }
+
+  .pad-right,
+  .pad-r {
+    padding-right: 1.5rem;
+  }
+
   .pad-bottom,
   .pad-b {
     padding-bottom: 1.5rem;

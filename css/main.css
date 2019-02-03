@@ -11,15 +11,10 @@ a {
   color: black;
 }
 
-header nav, .social, .top, .email {
-  text-align: right;
-}
-
 header ol li {
   display:inline-block;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
-
 
 header nav a:after, .top a:after {
   content: '';
@@ -36,28 +31,28 @@ header nav a:hover:after {
   background: black;
 }
 
+.banner {
+  background-image: url("../images/brideandgroom.jpg");
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  color: #fff;
+}
+
+footer {
+  background-color: #e5e5e5;
+}
+
 footer ol li {
   display: inline-block;
 }
 
-@media only screen and (min-width: 15em) {
-
-  header nav {
-    text-align: center;
-  }
-
-  header ol li {
-    display: inline;
-  }
+footer ol {
+  padding: 0;
 }
 
-@media only screen and (min-width: 40em) {
-
-  header nav {
-    text-align: right;
-  }
-
-  header ol li {
-    display: inline-block;
-  }
-}

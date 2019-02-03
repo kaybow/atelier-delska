@@ -1,0 +1,21 @@
+@media only screen and (min-width: 15em) {
+
+  header nav {
+    text-align: center;
+  }
+
+  header ol li {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+
+  header nav {
+    text-align: right;
+  }
+
+  header ol li {
+    display: inline-block;
+  }
+}
