@@ -3,12 +3,12 @@ html {
 }
 
 .logo {
-  width: 6em;
+  width: 5em;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #999;
 }
 
 header ol li {
@@ -31,9 +31,13 @@ header nav a:hover:after {
   background: black;
 }
 
+a:hover{
+  color: black;
+}
+
 .banner {
   background-image: url("../images/brideandgroom.jpg");
-  min-height: 600px;
+  min-height: 650px;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
