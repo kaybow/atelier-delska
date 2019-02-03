@@ -37,11 +37,9 @@ a:hover{
 
 .banner {
   background-image: url("../images/brideandgroom.jpg");
-  min-height: 650px;
+  min-height: 700px;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  display: block;
 }
 
 h1 {
