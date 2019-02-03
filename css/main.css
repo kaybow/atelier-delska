@@ -6,7 +6,7 @@ html {
   width: 5em;
 }
 
-a {
+a, p {
   text-decoration: none;
   color: #999;
 }
