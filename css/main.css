@@ -31,7 +31,7 @@ header nav a:hover:after {
   background: black;
 }
 
-a:hover{
+nav a:hover{
   color: black;
 }
 
@@ -40,6 +40,21 @@ a:hover{
   min-height: 700px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.button {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  color: #fff;
+  background-color: #D8D8D8;
+  padding: 12px 30px;
+}
+
+.button:hover {
+  background-color: #B5B5B5;
+  border-color: #B5B5B5;
+  color: #fff;
 }
 
 h1 {
