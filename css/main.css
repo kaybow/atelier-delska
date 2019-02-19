@@ -31,7 +31,7 @@ header nav a:hover:after {
   background: black;
 }
 
-nav a:hover{
+nav a:hover, .top a:hover{
   color: black;
 }
 
@@ -42,13 +42,18 @@ nav a:hover{
   background-position: center center;
 }
 
+.bannercontent {
+  vertical-align: center;
+}
+
 .button {
   border-style: solid;
   border-width: 2px;
   border-color: #fff;
   color: #fff;
-  background-color: #D8D8D8;
-  padding: 12px 30px;
+  background-color: #D8D8D8, 0.75;
+  background-color: rgba(216, 216, 216, 0.7);
+  padding: 12px 34px;
 }
 
 .button:hover {
