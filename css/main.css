@@ -46,6 +46,10 @@ nav a:hover, .top a:hover{
   vertical-align: center;
 }
 
+.viewport {
+  height: 100vh;
+}
+
 .button {
   border-style: solid;
   border-width: 2px;
