@@ -3,7 +3,7 @@ html {
 }
 
 .logosize {
-  width: 5em;
+  width: 5rem;
 }
 
 a, p {
@@ -31,19 +31,20 @@ header nav a:hover:after {
   background: black;
 }
 
-nav a:hover, .top a:hover{
+nav ol a:hover, .top a:hover{
   color: black;
 }
 
 .banner {
   background-image: url("../images/brideandgroom.jpg");
-  min-height: 700px;
+  min-height: 650px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .bannercontent {
-
+  position: absolute;
+  bottom: 8rem;
 }
 
 .viewport {
@@ -68,6 +69,7 @@ nav a:hover, .top a:hover{
 
 h1 {
   color: #fff;
+  font-family: 'Dancing Script', cursive;
 }
 
 footer {
@@ -99,6 +101,15 @@ footer ol {
     padding-top: 1rem;
     text-align: center;
   }
+
+  .logosize {
+    width: 6rem;
+  }
+
+  .bannercontent {
+    position: absolute;
+    bottom: 12rem;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -117,5 +128,14 @@ footer ol {
     padding-bottom: 0;
     padding-top: 0;
     text-align: left;
+  }
+
+  .logosize {
+    width: 5rem;
+  }
+
+  .bannercontent {
+    position: absolute;
+    bottom: 8rem;
   }
 }
