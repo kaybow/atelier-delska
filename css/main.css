@@ -12,7 +12,7 @@ a, p {
 }
 
 header ol li {
-  display:inline-block;
+  display: inline-block;
   padding-left: 2rem;
 }
 
@@ -43,7 +43,7 @@ nav a:hover, .top a:hover{
 }
 
 .bannercontent {
-  vertical-align: center;
+
 }
 
 .viewport {
@@ -81,4 +81,3 @@ footer ol li {
 footer ol {
   padding: 0;
 }
-
