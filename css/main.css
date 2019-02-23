@@ -2,7 +2,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
+.logosize {
   width: 5em;
 }
 
@@ -80,4 +80,42 @@ footer ol li {
 
 footer ol {
   padding: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+
+  header ol li {
+    display: inline;
+    padding-left: 0;
+  }
+
+  header nav ol {
+    text-align: center;
+  }
+
+  .logo {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+
+  header ol li {
+    display: inline-block;
+    padding-left: 2rem;
+  }
+
+  header nav ol {
+    text-align: right;
+  }
+
+  .logo {
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: left;
+  }
 }
