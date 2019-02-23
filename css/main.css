@@ -35,6 +35,10 @@ nav ol a:hover, .top a:hover{
   color: black;
 }
 
+.viewport {
+  height: 100vh;
+}
+
 .banner {
   background-image: url("../images/brideandgroom.jpg");
   min-height: 650px;
@@ -47,8 +51,9 @@ nav ol a:hover, .top a:hover{
   bottom: 8rem;
 }
 
-.viewport {
-  height: 100vh;
+h1 {
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
 }
 
 .button {
@@ -67,9 +72,18 @@ nav ol a:hover, .top a:hover{
   color: #fff;
 }
 
-h1 {
+.tagline {
+  text-align: right;
+  background-color: rgba(216, 216, 216, 0.7);
+  padding-bottom: 0.1rem;
+}
+
+.leaf {
+  width: 0.75rem;
+}
+
+.taglinetext {
   color: #fff;
-  font-family: 'Dancing Script', cursive;
 }
 
 footer {
@@ -115,6 +129,10 @@ footer ol {
     text-align: left;
   }
 
+  .social {
+    padding-bottom: 1rem;
+  }
+
 @media only screen and (min-width: 38em) {
 
 
@@ -140,5 +158,9 @@ footer ol {
   .bannercontent {
     position: absolute;
     bottom: 8rem;
+  }
+
+  .social {
+    padding-bottom: 0;
   }
 }
