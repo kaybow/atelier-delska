@@ -2,6 +2,10 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.viewport {
+  height: 100vh;
+}
+
 .logosize {
   width: 5rem;
 }
@@ -44,18 +48,6 @@ main {
   padding-left: .75rem;
   padding-right: .75rem;
   padding-bottom: .75rem;
-}
-
-.about {
-  padding-right: none;
-}
-
-.steps {
-  padding-left: none;
-}
-
-.viewport {
-  height: 100vh;
 }
 
 .banner {
