@@ -6,9 +6,14 @@ html {
   width: 5rem;
 }
 
-a, p {
+a {
   text-decoration: none;
   color: #999;
+}
+
+p {
+  font-size: .7901rem;
+  line-height: 1.3rem;
 }
 
 header ol li {
