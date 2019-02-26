@@ -86,7 +86,15 @@ h5 {
   color: #fff;
   background-color: #D8D8D8, 0.75;
   background-color: rgba(216, 216, 216, 0.7);
-  padding: 12px 34px;
+  padding: 8px 40px;
+}
+
+.button2 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #9D9D9D;
+  color: #9D9D9D;
+  padding: 8px 40px;
 }
 
 .button:hover {
@@ -111,6 +119,16 @@ h5 {
 
 .portrait {
   padding-left: 1.3rem;
+}
+
+.fineprint {
+  border-width: 1px;
+  border-color: #DDD9D9;
+  border-style: solid;
+}
+
+.fineprint p {
+  margin-bottom: 0;
 }
 
 footer {
