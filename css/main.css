@@ -75,6 +75,10 @@ h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+h5 {
+  margin-bottom: 0.75rem;
+}
+
 .button {
   border-style: solid;
   border-width: 2px;
