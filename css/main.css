@@ -2,10 +2,6 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-.viewport {
-  height: 100vh;
-}
-
 .logosize {
   width: 5rem;
 }
@@ -167,7 +163,6 @@ footer ol {
 .category h6:hover {
   color: #fff;
 }
-
 
 
 
