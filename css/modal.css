@@ -2,6 +2,16 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.text-content {
+  max-width: 600px;
+}
+
+.modal-image {
+  padding: 0;
+  magrin: 0;
+  boarder: 0;
+}
+
 .modal p {
 margin-bottom: 0px;
 line-height: 1.2rem;
@@ -10,9 +20,6 @@ line-height: 1.2rem;
 .btn-close {
 color: #999;
 text-decoration: none;
-position: absolute;
-right: 1.3rem;
-top: .325rem;
 }
 
 .btn-close:hover {
@@ -49,7 +56,6 @@ position: absolute;
 left: 50%;
 top: 50%;
 z-index: 11;
-width: 50%;
 /*
 transform: translate(-50, -50%)
 */
@@ -57,11 +63,6 @@ transform: translate(-50, -50%)
 -webkit-transform: translate(0, -500%);
 -ms-transform: translate(0, -500%);
 transform: translate(0, -500%)
-
--webkit-transition: -webkit-transform 0.5s ease-out;
--moz-transition: -moz-transform 0.5s ease-out;
--o-transition: -o-transform 0.5s ease-out;
-transition: transform 0.5s ease-out;
 }
 
 #close {
