@@ -2,16 +2,17 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-p {
+.modal p {
 margin-bottom: 0px;
+line-height: 1.2rem;
 }
 
 .btn-close {
 color: #999;
 text-decoration: none;
 position: absolute;
-right: 10px;
-top: 0;
+right: 1.3rem;
+top: .325rem;
 }
 
 .btn-close:hover {
@@ -22,14 +23,14 @@ color: black;
 content: "";
 display: none;
 background: rgba(0, 0, 0, 0.6);
-position: fixed;
+position: absolute;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-z-in
-dex: 10;
+z-index: 10;
 }
+
 .modal:target:before {
 display: block;
 }
@@ -38,28 +39,31 @@ display: block;
 -webkit-transform: translate(0, 0);
 -ms-transform: translate(0, 0);
 transform: translate(0, 0);
-top: 20%;
 }
 
 .modal-dialog {
 background: #fff;
 border-radius: 3px;
-margin-left: -200px;
-position: fixed;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+position: absolute;
 left: 50%;
-top: -100%;
+top: 50%;
 z-index: 11;
-width: 360px;
+width: 50%;
+/*
+transform: translate(-50, -50%)
+*/
+
 -webkit-transform: translate(0, -500%);
 -ms-transform: translate(0, -500%);
-transform: translate(0, -500%);
--webkit-transition: -webkit-transform 0.3s ease-out;
--moz-transition: -moz-transform 0.3s ease-out;
--o-transition: -o-transform 0.3s ease-out;
-transition: transform 0.3s ease-out;
+transform: translate(0, -500%)
+
+-webkit-transition: -webkit-transform 0.5s ease-out;
+-moz-transition: -moz-transform 0.5s ease-out;
+-o-transition: -o-transform 0.5s ease-out;
+transition: transform 0.5s ease-out;
 }
 
-/*ADDED TO STOP SCROLLING TO TOP*/
 #close {
 display: none;
 }
