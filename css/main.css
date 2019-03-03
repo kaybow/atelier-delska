@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header ol li {
-  display: inline-block;s
+  display: inline-block;
   padding-left: 2rem;
 }
 
@@ -180,6 +180,10 @@ footer ol {
     text-align: center;
   }
 
+  header nav a:hover:after {
+  width: 0%;
+}
+
   .logo {
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -215,6 +219,11 @@ footer ol {
   header nav ol, .social, .email {
     text-align: right;
   }
+
+  header nav a:hover:after {
+  width: 80%;
+}
+
 
   .logo {
     padding-bottom: 0;
