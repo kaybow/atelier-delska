@@ -1,23 +1,32 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.viewport {
+    height: 100vh;
 }
 
 .logosize {
-  width: 5rem;
+    width: 5rem;
 }
 
 a {
-  text-decoration: none;
-  color: #999;
+    text-decoration: none;
+    color: #999;
 }
 
 p {
-  font-size: .7901rem;
-  line-height: 1.3rem;
+    font-size: .7901rem;
+    line-height: 1.3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+    font-weight: normal;
+}
+
+header {
+    height: 20%;
+    min-height: 80px;
 }
 
 header ol li {
@@ -26,79 +35,104 @@ header ol li {
 }
 
 header nav a:after, .top a:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 
 header nav a:hover:after {
-  width: 80%;
-  background: black;
+    width: 80%;
+    background: black;
 }
 
-nav ol a:hover, .top a:hover{
-  color: black;
+nav ol a:hover, .top a:hover {
+    color: black;
 }
 
 main {
-  padding-left: .75rem;
-  padding-right: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.banner-container {
+    flex: 1;
+    height: 80%;
+    position: relative;
 }
 
 .banner {
-  background-image: url("../images/brideandgroom.jpg");
-  min-height: 650px;
-  background-repeat: no-repeat;
-  background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-image: url("../images/brideandgroom.jpg");
+    min-height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url("../images/brideandgroom.jpg");
 }
 
 .bannercontent {
-  position: absolute;
-  bottom: 8rem;
+    /* position: absolute; */
+    bottom: 8rem;
 }
 
 h1 {
-  color: #fff;
-  font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
 }
 
 h5 {
-  margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .button {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #fff;
-  color: #fff;
-  background-color: #D8D8D8, 0.75;
-  background-color: rgba(216, 216, 216, 0.7);
-  padding: 8px 56px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    color: #fff;
+    background-color: #D8D8D8, 0.75;
+    background-color: rgba(216, 216, 216, 0.7);
+    padding: 8px 56px;
 }
 
 .button:hover {
-  background-color: #B5B5B5;
-  border-color: #B5B5B5;
-  color: #fff;
+    background-color: #B5B5B5;
+    border-color: #B5B5B5;
+    color: #fff;
 }
 
 .button2 {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #9D9D9D;
-  background-color: #F5F5F5;
-  color: #9D9D9D;
-  padding: 8px 56px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9D9D9D;
+    background-color: #F5F5F5;
+    color: #9D9D9D;
+    padding: 8px 56px;
 }
 
 .button2:hover {
-  background-color: #B5B5B5;
-  border-color: #B5B5B5;
-  color: #fff;
+    background-color: #B5B5B5;
+    border-color: #B5B5B5;
+    color: #fff;
 }
 
 .send-btn {
@@ -117,21 +151,23 @@ h5 {
 }
 
 .tagline {
-  text-align: right;
-  background-color: rgba(216, 216, 216, 0.7);
-  padding-bottom: 0.1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: right;
+    background-color: rgba(216, 216, 216, 0.7);
+    padding-bottom: 0.1rem;
 }
 
 .leaf {
-  width: 0.75rem;
+    width: 0.75rem;
 }
 
 .taglinetext {
-  color: #fff;
+    color: #fff;
 }
 
 .portrait {
-  padding-left: 1.3rem;
+    padding-left: 1.3rem;
 }
 
 .fineprint {
@@ -141,43 +177,52 @@ h5 {
 }
 
 .fineprint p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .number {
-  padding-right: 1rem;
+    padding-right: 1rem;
 }
 
 footer {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 footer ol li {
-  display: inline-block;
+    display: inline-block;
 }
 
 footer ol {
-  padding: 0;
+    padding: 0;
 }
 
 .category {
-  background-color: #f1f1f1;
-  padding-top: .75rem;
+    background-color: #f1f1f1;
+    padding-top: .75rem;
 }
 
 .category h6 {
-  margin-left: 1.125rem;
-  margin-top: .75rem;
-  margin-bottom: .75rem;
-  line-height: 1.3rem;
+    margin-left: 1.125rem;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    line-height: 1.3rem;
+    background-color: #f1f1f1;
+    padding-top: .975rem;
+}
+
+.category h5 {
+    line-height: 1.5rem;
+    margin-left: .975rem;
+    margin-top: .975rem;
+    margin-bottom: .975rem;
 }
 
 .category:hover {
-  background-color: rgba(216, 216, 216, 0.7);
+    background-color: rgba(216, 216, 216, 0.7);
 }
 
 .category h6:hover {
-  color: #fff;
+    color: #fff;
 }
 
 section {
@@ -196,79 +241,65 @@ label {
   padding-bottom: 1rem;
 }
 
-@media only screen and (min-width: 25em) {
-
-
-  header ol li {
-    display: inline;
-    padding-left: 0;
-  }
-
-  header nav ol {
-    text-align: center;
-  }
-
-  header nav a:hover:after {
-  width: 0%;
+.category h5:hover {
+    color: #fff;
 }
 
-  .logo {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
+@media all and (max-width: 600px) {
+    header {
+        min-height: 200px;
+    }
+}
 
-  .logosize {
-    width: 6rem;
-  }
-
-  .bannercontent {
-    position: absolute;
-    bottom: 12rem;
-  }
-
-  .social, .email {
-    text-align: left;
-  }
-
-  .social {
-    padding-bottom: 1rem;
-  }
+@media only screen and (min-width: 25em) {
+    header ol li {
+        display: inline;
+        padding-left: 0;
+    }
+    header nav ol {
+        text-align: center;
+    }
+    .logo {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .logosize {
+        width: 6rem;
+    }
+    .bannercontent {
+        /* position: absolute; */
+        /* bottom: 12rem; */
+    }
+    .social, .email {
+        text-align: left;
+    }
+    .social {
+        padding-bottom: 1rem;
+    }
 }
 
 @media only screen and (min-width: 38em) {
-
-
-  header ol li {
-    display: inline-block;
-    padding-left: 2rem;
-  }
-
-  header nav ol, .social, .email {
-    text-align: right;
-  }
-
-  header nav a:hover:after {
-  width: 80%;
-}
-
-
-  .logo {
-    padding-bottom: 0;
-    padding-top: 0;
-    text-align: left;
-  }
-
-  .logosize {
-    width: 5rem;
-  }
-
-  .bannercontent {
-    position: absolute;
-    bottom: 8rem;
-  }
-
-  .social {
-    padding-bottom: 0;
-  }
+    header ol li {
+        display: inline-block;
+        padding-left: 2rem;
+    }
+    header nav ol, .social, .email {
+        text-align: right;
+    }
+    .logo {
+        padding-bottom: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+    .logosize {
+        width: 5rem;
+    }
+    .bannercontent {
+        /* position: absolute; */
+        /* bottom: 8rem; */
+    }
+    .social {
+        padding-bottom: 0;
+    }
 }
