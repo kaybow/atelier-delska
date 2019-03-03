@@ -101,6 +101,21 @@ h5 {
   color: #fff;
 }
 
+.send-btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFF;
+  color: #FFF;
+  background-color: #9D9D9D;
+  padding: 8px 48px;
+}
+
+.send-btn:hover {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #9D9D9D;
+}
+
 .tagline {
   text-align: right;
   background-color: rgba(216, 216, 216, 0.7);
@@ -121,7 +136,7 @@ h5 {
 
 .fineprint {
   border-width: 1px;
-  border-color: #DDD9D9;
+  border-color: ##9D9D9D;
   border-style: solid;
 }
 
@@ -165,9 +180,21 @@ footer ol {
   color: #fff;
 }
 
+section {
+  background-color: #9D9D9D;
+}
 
+input, textarea {
+  border: none;
+  width: 100%;
+}
 
-
+.intouch, label {
+  color: #fff;
+}
+label {
+  padding-bottom: 1rem;
+}
 
 @media only screen and (min-width: 25em) {
 
