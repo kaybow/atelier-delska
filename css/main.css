@@ -151,8 +151,6 @@ h5 {
 }
 
 .tagline {
-    position: -webkit-sticky;
-    position: sticky;
     text-align: right;
     background-color: rgba(216, 216, 216, 0.7);
     padding-bottom: 0.1rem;
@@ -185,6 +183,7 @@ h5 {
 }
 
 footer {
+    position: sticky;
     background-color: #e5e5e5;
 }
 
