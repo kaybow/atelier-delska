@@ -2,23 +2,22 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*
 .text-content {
   max-width: 600px;
 }
+*/
 
 .modal {
   position: absolute;
-}
-
-.modal-content {
-background: #fff;
-border-radius: 3px;
-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-position: absolute;
-left: 50%;
-top: 50%;
-z-index: 11;
-transform: translate(-50, -50%)
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 11;
+  transform: translate(-50, -50%)
 }
 
 .modal p {
