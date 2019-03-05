@@ -66,11 +66,11 @@
   </div>
 </main>
 
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="island-1-2 modal-dialog">
+<div class="modal" id="modal">
+  <div class="island-1-2 modal-content">
     <div class="grid">
       <div class="text-right unit xs-1 s-1 m-1 l-1">
-        <a href="#close" class="exa btn-close" aria-hidden="true">×</a>
+        <button onclick="myFunction()">×</button>
       </div>
 
       <div class="unit xs-1 s-1 m-2-3 l-2-3">
@@ -86,8 +86,8 @@
         <div class="embed embed--1by1">
           <img class="embed__item" src="images/small-modal-img.jpg" alt="">
         </div>
-
       </div>
+
       <div class="unit xs-1 s-1 m-1 l-1 text-content">
         <h6>Portfolio Piece Title</h6>
         <p class="micro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -95,6 +95,17 @@
     </div>
   </div>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("modal");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <footer class="island-1-2 gutter">
   <div class="grid">
