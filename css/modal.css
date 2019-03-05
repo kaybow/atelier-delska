@@ -6,10 +6,14 @@ html {
   max-width: 600px;
 }
 
+.modal {
+  position: absolute;
+}
+
 .modal-image {
   padding: 0;
-  magrin: 0;
-  boarder: 0;
+  margin: 0;
+  border: 0;
 }
 
 .modal p {
@@ -27,15 +31,7 @@ color: black;
 }
 
 .modal:before {
-content: "";
 display: none;
-background: rgba(0, 0, 0, 0.6);
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 10;
 }
 
 .modal:target:before {
@@ -56,13 +52,7 @@ position: absolute;
 left: 50%;
 top: 50%;
 z-index: 11;
-/*
 transform: translate(-50, -50%)
-*/
-
--webkit-transform: translate(0, -500%);
--ms-transform: translate(0, -500%);
-transform: translate(0, -500%)
 }
 
 #close {
