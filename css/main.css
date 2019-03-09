@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    height: 20%;
+    height: 15%;
     min-height: 80px;
 }
 
@@ -66,7 +66,7 @@ main {
 
 .banner-container {
     flex: 1;
-    height: 80%;
+    height: 85%;
     position: relative;
 }
 
@@ -207,13 +207,6 @@ footer ol {
     line-height: 1.3rem;
     background-color: #f1f1f1;
     padding-top: .975rem;
-}
-
-.category h5 {
-    line-height: 1.5rem;
-    margin-left: .975rem;
-    margin-top: .975rem;
-    margin-bottom: .975rem;
 }
 
 .category:hover {
