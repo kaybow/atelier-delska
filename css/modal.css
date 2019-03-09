@@ -20,17 +20,18 @@ html {
 }
 
 .modal p {
-margin-bottom: 0px;
-line-height: 1.2rem;
+  margin-bottom: 0px;
+  line-height: 1.2rem;
 }
 
 .btn-close {
-color: #999;
-text-decoration: none;
+  color: #999;
+  text-decoration: none;
+  border: 0;
 }
 
 .btn-close:hover {
-color: black;
+  color: black;
 }
 
 
