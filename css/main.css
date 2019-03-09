@@ -91,8 +91,6 @@ main {
 }
 
 .bannercontent {
-    /* position: absolute; */
-    bottom: 8rem;
 }
 
 h1 {
@@ -255,8 +253,6 @@ label {
         width: 6rem;
     }
     .bannercontent {
-        /* position: absolute; */
-        /* bottom: 12rem; */
     }
     .social, .email {
         text-align: left;
@@ -283,8 +279,6 @@ label {
         width: 5rem;
     }
     .bannercontent {
-        /* position: absolute; */
-        /* bottom: 8rem; */
     }
     .social {
         padding-bottom: 0;
