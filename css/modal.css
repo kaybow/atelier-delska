@@ -12,17 +12,29 @@ html {
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 50%;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 25%;
+  top: 5%;
   z-index: 11;
-  transform: translate(-50, -50%)
 }
 
 .modal p {
   margin-bottom: 0px;
   line-height: 1.2rem;
 }
+
+/*
+.overlay {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+}
+*/
 
 .btn-close {
   color: #999;
