@@ -197,7 +197,7 @@ footer ol {
 
 .category {
     background-color: #f1f1f1;
-    padding-top: .75rem;
+    padding-top: .5rem;
 }
 
 .category h6 {
@@ -205,16 +205,11 @@ footer ol {
     margin-top: .75rem;
     margin-bottom: .75rem;
     line-height: 1.3rem;
-    background-color: #f1f1f1;
     padding-top: .975rem;
 }
 
 .category:hover {
     background-color: rgba(216, 216, 216, 0.7);
-}
-
-.category h6:hover {
-    color: #fff;
 }
 
 section {
