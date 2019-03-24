@@ -24,17 +24,16 @@ html {
   line-height: 1.2rem;
 }
 
-/*
 .overlay {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: absolute;
     padding: 0;
+    z-index:10;
 }
-*/
 
 .btn-close {
   color: #999;
