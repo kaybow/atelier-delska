@@ -128,6 +128,7 @@ h5 {
     background-color: #005562;
     border-color: #005562;
     color: #fff;
+    transition: .5s ease;
 }
 
 .send-btn {
@@ -205,10 +206,29 @@ footer ol {
 
 .category:hover {
     background-color: rgba(0, 85, 98, 0.75);
+    transition: .5s ease;
 }
 
 .category:hover a {
-  color: #fff;
+    color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.image:hover .overlay {
+    opacity: .5;
+    background-color: #008D9B;
 }
 
 section {
@@ -226,10 +246,6 @@ input, textarea {
 
 label {
   padding-bottom: 1rem;
-}
-
-.category h5:hover {
-    color: #fff;
 }
 
 @media all and (max-width: 600px) {
