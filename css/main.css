@@ -12,7 +12,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #003B44;
 }
 
 p {
@@ -24,8 +24,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+h3 {
+    color: #008D9B;
+}
+
 header {
-    height: 13%;
+    height: 12%;
     min-height: 80px;
 }
 
@@ -46,11 +50,11 @@ header nav a:after, .top a:after {
 
 header nav a:hover:after {
     width: 80%;
-    background: black;
+    background: #008D9B;
 }
 
 nav ol a:hover, .top a:hover {
-    color: black;
+    color: #008D9B;
 }
 
 main {
@@ -66,7 +70,7 @@ main {
 
 .banner-container {
     flex: 1;
-    height: 87%;
+    height: 88%;
     position: relative;
 }
 
@@ -90,9 +94,6 @@ main {
     -ms-behavior: url("../images/brideandgroom.jpg");
 }
 
-.bannercontent {
-}
-
 h1 {
     color: #fff;
     font-family: 'Rochester', cursive;
@@ -110,29 +111,22 @@ h5 {
     border-width: 2px;
     border-color: #fff;
     color: #fff;
-    background-color: #D8D8D8, 0.75;
-    background-color: rgba(216, 216, 216, 0.7);
+    background-color: rgba(0, 59, 68, 0.75);
     padding: 8px 56px;
-}
-
-.button:hover {
-    background-color: #B5B5B5;
-    border-color: #B5B5B5;
-    color: #fff;
 }
 
 .button2 {
     border-style: solid;
     border-width: 2px;
-    border-color: #9D9D9D;
-    background-color: #F5F5F5;
-    color: #9D9D9D;
+    border-color: #003B44;
+    background-color: #003B44;
+    color: #fff;
     padding: 8px 56px;
 }
 
-.button2:hover {
-    background-color: #B5B5B5;
-    border-color: #B5B5B5;
+.button:hover, .button2:hover {
+    background-color: #005562;
+    border-color: #005562;
     color: #fff;
 }
 
@@ -153,7 +147,7 @@ h5 {
 
 .tagline {
     text-align: right;
-    background-color: rgba(216, 216, 216, 0.7);
+    background-color: rgba(0, 85, 98, 0.75);
     padding-bottom: 0.1rem;
 }
 
@@ -185,7 +179,7 @@ h5 {
 
 footer {
     position: sticky;
-    background-color: #e5e5e5;
+    background-color: #F5F8F9;
 }
 
 footer ol li {
@@ -210,7 +204,7 @@ footer ol {
 }
 
 .category:hover {
-    background-color: rgba(216, 216, 216, 0.7);
+    background-color: rgba(0, 85, 98, 0.75);
 }
 
 .category:hover a {
