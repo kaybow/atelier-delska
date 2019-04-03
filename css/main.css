@@ -277,6 +277,23 @@ label {
         width: 0%;
     }
 
+    header {
+        height: 30%;
+        min-height: 80px;
+    }
+
+    .banner-container {
+        flex: 1;
+        height: 70%;
+        position: relative;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
     .logo {
         padding-bottom: 1rem;
         padding-top: 1rem;
@@ -318,6 +335,22 @@ label {
     header nav a:hover:after {
         width: 80%;
         background: #008D9B;
+    }
+
+        header {
+        height: 11%;
+        min-height: 80px;
+    }
+
+    .banner-container {
+        flex: 1;
+        height: 89%;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
     }
 
     .logo {
