@@ -270,6 +270,7 @@ label {
 
     header nav ol {
         text-align: center;
+        padding-left: 0;
     }
 
     header nav a:hover:after {
@@ -315,8 +316,8 @@ label {
     }
 
     header nav a:hover:after {
-    width: 80%;
-    background: #008D9B;
+        width: 80%;
+        background: #008D9B;
     }
 
     .logo {
