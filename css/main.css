@@ -77,8 +77,6 @@ main {
 .banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
     background-image: url("../images/brideandgroom.jpg");
     min-height: 100%;
     width: 100%;
@@ -95,15 +93,13 @@ main {
 }
 
 .banneroverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .5;
-  background-color: rgba(0, 59, 68, 0.25);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,59,68,0.3));
 }
 
 h1 {
