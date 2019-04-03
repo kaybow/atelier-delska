@@ -29,7 +29,7 @@ h3 {
 }
 
 header {
-    height: 12%;
+    height: 11%;
     min-height: 80px;
 }
 
@@ -70,14 +70,14 @@ main {
 
 .banner-container {
     flex: 1;
-    height: 88%;
+    height: 89%;
     position: relative;
 }
 
 .banner {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/brideandgroom.jpg");
+    background-image: url("../images/studio.jpg");
     min-height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ main {
     /* scale bg image proportionately */
     background-size: cover;
     /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
-    -ms-behavior: url("../images/brideandgroom.jpg");
+    -ms-behavior: url("../images/studio.jpg");
 }
 
 .banneroverlay {
@@ -99,7 +99,7 @@ main {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,59,68,0.3));
+    background-image: linear-gradient(to bottom, rgba(81,28,5,0.8), rgba(126,58,28,0.3));
 }
 
 h1 {
@@ -107,7 +107,7 @@ h1 {
     font-family: 'Rochester', cursive;
     font-size: 4rem;
     line-height: 4.5rem;
-    padding-top: 6rem;
+    padding-top: 5rem;
 }
 
 h5 {
@@ -133,8 +133,8 @@ h5 {
 }
 
 .button:hover, .button2:hover {
-    background-color: #005562;
-    border-color: #005562;
+    background-color: #008D9B;
+    border-color: #008D9B;
     color: #fff;
     transition: .5s ease;
 }
@@ -262,26 +262,34 @@ label {
 }
 
 @media only screen and (min-width: 25em) {
+
     header ol li {
         display: inline;
         padding-left: 0;
     }
+
     header nav ol {
         text-align: center;
     }
+
+    header nav a:hover:after {
+        width: 0%;
+    }
+
     .logo {
         padding-bottom: 1rem;
         padding-top: 1rem;
         text-align: center;
     }
+
     .logosize {
         width: 6rem;
     }
-    .bannercontent {
-    }
+
     .social, .email {
         text-align: left;
     }
+
     .social {
         padding-bottom: 1rem;
     }
@@ -301,19 +309,26 @@ label {
         display: inline-block;
         padding-left: 2rem;
     }
+
     header nav ol, .social, .email {
         text-align: right;
     }
+
+    header nav a:hover:after {
+    width: 80%;
+    background: #008D9B;
+    }
+
     .logo {
         padding-bottom: 0;
         padding-top: 0;
         text-align: left;
     }
+
     .logosize {
         width: 5rem;
     }
-    .bannercontent {
-    }
+
     .social {
         padding-bottom: 0;
     }
