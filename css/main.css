@@ -140,18 +140,18 @@ h5 {
 }
 
 .send-btn {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #FFF;
-  color: #FFF;
-  background-color: #9D9D9D;
-  padding: 8px 48px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #9D9D9D;
+    padding: 8px 48px;
 }
 
 .send-btn:hover {
-  background-color: #FFF;
-  border-color: #FFF;
-  color: #9D9D9D;
+    background-color: #FFF;
+    border-color: #FFF;
+    color: #9D9D9D;
 }
 
 .tagline {
@@ -168,14 +168,15 @@ h5 {
     color: #fff;
 }
 
-.fineprint1 {   
+.fineprint {   
   width: 70%;
+  margin: 0 auto;
 }
 
 .fineprint2 {
-  border-width: 1px;
-  border-color: ##9D9D9D;
-  border-style: solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+    border-style: solid;
 }
 
 .fineprint2 p {
