@@ -99,7 +99,7 @@ main {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgba(81,28,5,0.7), rgba(126,58,28,0.2));
+    background-image: linear-gradient(to bottom, rgba(81,28,5,0.6), rgba(126,58,28,0.2));
 }
 
 h1 {
@@ -240,7 +240,7 @@ footer ol {
 
 .image:hover .overlay {
     opacity: .5;
-    background-color: #008D9B;
+    background-color: #7E3A1C;
 }
 
 section {
