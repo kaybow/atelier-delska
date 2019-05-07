@@ -1,12 +1,33 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+import { graphql } from "gatsby";
 
 import DesignImage from "./DesignImage";
-import DesignGridPairs from "./DesignGridPairs";
 import Modal from "./Modal";
 
-import { designList } from "../../images/designs/DesignList";
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.325rem;
 
-const Gallery = props => {
+  > .garmentContainer {
+    grid-column: span 3;
+  }
+
+  @media only screen and (min-width: 40rem) {
+    > .garmentContainer {
+      grid-column: span 2;
+    }
+  }
+
+  @media only screen and (min-width: 80rem) {
+    > .garmentContainer {
+      grid-column: span 1;
+    }
+  }
+`;
+
+const Gallery = ({ images }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState();
 
@@ -19,45 +40,22 @@ const Gallery = props => {
     setSelectedImage(image);
   };
 
+  /* Using the design page query, we passed in all the image sources as an array
+   in JS we can use this map function to turn each item in the array into
+   our DesignImage React component instead of writing one for each image
+  */
+  const designs = images.map((image, i) => (
+    <DesignImage
+      key={`${image.name}-${i}`}
+      onClick={handleImageClick}
+      src={image.src}
+      alt={image.name}
+    />
+  ));
+
   return (
     <>
-      <div class="pad-t-1-2 pad-b-1-2">
-        <div class="grid" />
-
-        <div class="grid">
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[0]} />
-            <DesignImage onClick={handleImageClick} src={designList[1]} />
-          </DesignGridPairs>
-
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[2]} />
-            <DesignImage onClick={handleImageClick} src={designList[3]} />
-          </DesignGridPairs>
-
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[4]} />
-            <DesignImage onClick={handleImageClick} src={designList[5]} />
-          </DesignGridPairs>
-        </div>
-
-        <div class="grid">
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[6]} />
-            <DesignImage onClick={handleImageClick} src={designList[7]} />
-          </DesignGridPairs>
-
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[8]} />
-            <DesignImage onClick={handleImageClick} src={designList[9]} />
-          </DesignGridPairs>
-
-          <DesignGridPairs>
-            <DesignImage onClick={handleImageClick} src={designList[10]} />
-            <DesignImage onClick={handleImageClick} src={designList[11]} />
-          </DesignGridPairs>
-        </div>
-      </div>
+      <Grid>{designs}</Grid>
 
       {modalOpen ? (
         <Modal image={selectedImage} onClick={handleCloseModal} />
