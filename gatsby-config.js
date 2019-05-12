@@ -6,15 +6,22 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["Rochester", "Open+Sans+Condensed:300"]
+          families: ['Rochester', 'Open+Sans+Condensed:300']
         }
       }
     },
 
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `designs`,
+        path: `${__dirname}/src/images/designs`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,4 +47,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ]
-};
+}
