@@ -56,10 +56,7 @@ const Gallery = ({ images }) => {
   return (
     <>
       <Grid>{designs}</Grid>
-
-      {modalOpen ? (
-        <Modal image={selectedImage} onClick={handleCloseModal} />
-      ) : null}
+      {modalOpen && <Modal image={selectedImage} onClick={handleCloseModal} />}
     </>
   );
 };
