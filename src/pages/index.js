@@ -7,12 +7,12 @@ import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
 import leaf from "../images/leaf.png";
-import studio from "../images/studio.jpg";
+import studio2 from "../images/studio2.jpg";
 
 const Banner = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: url(${studio});
+  background-image: url(${studio2});
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@ const Banner = styled.div`
   /* scale bg image proportionately */
   background-size: cover;
   /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
-  -ms-behavior: url(${studio});
+  -ms-behavior: url(${studio2});
 `;
 
 const IndexPage = () => (
