@@ -12,7 +12,7 @@ const About = props => {
       <PageHead title="About" />
       <Header />
 
-      <main className="gutter">
+      <main>
         <div className="pad-b">
 
           <div className="grid">
@@ -27,7 +27,7 @@ const About = props => {
             </div>
 
             <div className="unit xs-1 s-1 m-2-3 l-2-3">
-              <p className="about">
+              <p className="about gutter">
                 It was a love of people—their history, language and culture that
                 originally drew me to the study of fashion history during my
                 time at Mount Allison University. As I continued my studies in
@@ -57,63 +57,34 @@ const About = props => {
         </div>
 
         <div>
-          <h3>working together</h3>
+          <h3 className="text-center">working together</h3>
 
-          <div className="grid pad-b">
-            <div className="unit xs-1 s-1 m-2-3 l-2-3">
-              <div className="grid">
-                <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 number">
-                  <div className="embed embed--1by1">
-                    <img
-                      className="embed__item"
-                      src="https://via.placeholder.com/100x100.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="unit xs-1-2 s-1-2 m-3-4 l-3-4">
+          <div className="workingtogether text-center">
+                <div>
                   <h5>design vision and consultation</h5>
                   <p>
                     After an initial consultation in which we discuss your
                     vision, I will produce one or more sketches of possible
-                    designs to choose from. These sketches may be modified until
+                    designs to choose from. These sketches may be modified until
                     the final design is agreed upon.
+                    <br />
+                    ___
                   </p>
                 </div>
-              </div>
 
-              <div className="grid">
-                <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 number">
-                  <div className="embed embed--1by1">
-                    <img
-                      className="embed__item"
-                      src="https://via.placeholder.com/100x100.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="unit xs-1-2 s-1-2 m-3-4 l-3-4">
+                <div>
                   <h5>custom pattern creation</h5>
                   <p>
                     While an in-person fitting session for taking measurements
                     is recommend, if not possible, a garment will be made based
                     on the measurements provided. I will then draft a fitted
                     personalized pattern that is customized for your garment.
+                    <br />
+                    ___
                   </p>
                 </div>
-              </div>
 
-              <div className="grid">
-                <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 number">
-                  <div className="embed embed--1by1">
-                    <img
-                      className="embed__item"
-                      src="https://via.placeholder.com/100x100.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="unit xs-1-2 s-1-2 m-2-3 l-3-4">
+                <div>
                   <h5>garment construction and revisions</h5>
                   <p>
                     Typically, I will then fit a mock-up of your garment before
@@ -125,17 +96,18 @@ const About = props => {
                     We will continue to work together on the final garment until
                     the desired fit is achieved and you have a design you
                     absolutely LOVE!
+                    <br />
+                    ___
                   </p>
                 </div>
-              </div>
+
             </div>
           </div>
-        </div>
 
         <div className="pad-b fineprint">
           <div className="unit xs-1 s-1 m-1 l-1 number">
             <div className="fineprint2">
-              <p className="island-1-2 nano text-center">
+              <p className="island-1-2 text-center">
                 All orders require a non-refundable deposit of 50% before the
                 start of work. You may also provide the materials directly in
                 person, or place an online order to be shipped to my workspace.
