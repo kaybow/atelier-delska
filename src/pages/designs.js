@@ -56,7 +56,7 @@ const Designs = ({ data }) => (
       </div>
     </div>
 
-    <main className="gutter">
+    <main>
       <Gallery images={imageSrcFromEdges(data.allFile.edges)} />
     </main>
 
