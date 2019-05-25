@@ -14,7 +14,6 @@ const About = props => {
 
       <main className="gutter">
         <div className="pad-b">
-          <h3>about the atelier</h3>
 
           <div className="grid">
             <div className="unit xs-1 s-1 m-1-3 l-1-3 portrait">

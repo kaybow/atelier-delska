@@ -12,12 +12,11 @@ const Contact = props => {
       <PageHead title="Contact" />
       <Header />
 
-      <main class="gutter">
-        <h3>get in touch</h3>
+      <main>
 
-        <div class="grid pad-b-1-4">
-          <section class="unit xs-1 s-1 m-1 l-1-3 contact island">
-            <h5 class="intouch">get in touch</h5>
+        <div class="grid">
+          <section class="unit xs-1 s-1 m-1 l-1-3 island contact">
+            <h4 class="intouch">get in touch</h4>
             <div>
               <form
                 class="push-0"
@@ -77,12 +76,6 @@ const Contact = props => {
           </div>
         </div>
 
-        <div>
-          <p>
-            Atalier Delska’s studio is located 50 minutes east of Ottawa, and 15
-            minutes from Vankleek Hill.
-          </p>
-        </div>
       </main>
 
       <Footer />

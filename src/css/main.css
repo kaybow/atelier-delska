@@ -29,10 +29,6 @@ h6 {
   font-weight: normal;
 }
 
-h3 {
-  color: #008d9b;
-}
-
 header {
   height: 12%;
   min-height: 80px;
@@ -62,11 +58,6 @@ header nav a:hover:after {
 nav ol a:hover,
 .top a:hover {
   color: #008d9b;
-}
-
-main {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .main-container {
@@ -188,7 +179,6 @@ h5 {
 
 footer {
   position: sticky;
-  background-color: #f5f8f9;
 }
 
 footer ol li {
