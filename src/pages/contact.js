@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
 import map from "../images/map.jpg";
+import studio from "../images/studio.jpg";
 
 const Contact = props => {
   return (
@@ -69,7 +70,7 @@ const Contact = props => {
               <img
                 onclick="myFunction()"
                 class="embed__item"
-                src={map}
+                src={studio}
                 alt=""
               />
             </div>
