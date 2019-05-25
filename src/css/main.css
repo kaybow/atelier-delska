@@ -81,8 +81,8 @@ nav ol a:hover,
   justify-content: space-between;
   background-image: linear-gradient(
     to bottom,
-    rgba(81, 28, 5, 0.4),
-    rgba(126, 58, 28, 0.2)
+    rgba(81, 28, 5, 0.5),
+    rgba(126, 58, 28, 0)
   );
 }
 
@@ -98,28 +98,20 @@ h5 {
   margin-bottom: 0.75rem;
 }
 
-.button {
+.button, .button2 {
   border-style: solid;
   border-width: 2px;
   border-color: #fff;
+  border-radius: 5px;
   color: #fff;
-  background-color: rgba(0, 59, 68, 0.75);
-  padding: 8px 56px;
-}
-
-.button2 {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #003b44;
-  background-color: #003b44;
-  color: #fff;
-  padding: 8px 56px;
+  background-color: #003B44;
+  padding: 8px 80px;
 }
 
 .button:hover,
 .button2:hover {
-  background-color: #008d9b;
-  border-color: #008d9b;
+  background-color: #008D9B;
+  border-color: #008D9B;
   color: #fff;
   transition: 0.5s ease;
 }
@@ -127,10 +119,11 @@ h5 {
 .send-btn {
   border-style: solid;
   border-width: 2px;
+  border-radius: 5px;
   border-color: #fff;
   color: #fff;
   background-color: #003B44;
-  padding: 8px 48px;
+  padding: 4px 48px;
 }
 
 .send-btn:hover {
@@ -169,8 +162,9 @@ h5 {
   margin-bottom: 0;
 }
 
-.number {
-  padding-right: 1rem;
+.workingtogether {
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 .about {
@@ -229,7 +223,7 @@ footer ol {
 }
 
 section {
-  background-color: #003B44;
+  background-color: #005562;
 }
 
 input,
