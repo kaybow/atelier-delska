@@ -90,7 +90,7 @@ main {
   justify-content: space-between;
   background-image: linear-gradient(
     to bottom,
-    rgba(81, 28, 5, 0.5),
+    rgba(81, 28, 5, 0.4),
     rgba(126, 58, 28, 0.2)
   );
 }
