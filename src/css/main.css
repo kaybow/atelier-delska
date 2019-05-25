@@ -138,14 +138,15 @@ h5 {
   border-width: 2px;
   border-color: #fff;
   color: #fff;
-  background-color: #9d9d9d;
+  background-color: #003B44;
   padding: 8px 48px;
 }
 
 .send-btn:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #9d9d9d;
+  color: #003B44;
+  transition: 0.5s ease;
 }
 
 .tagline {
@@ -238,7 +239,7 @@ footer ol {
 }
 
 section {
-  background-color: #9d9d9d;
+  background-color: #003B44;
 }
 
 input,
