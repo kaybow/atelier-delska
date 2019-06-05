@@ -277,18 +277,14 @@ label {
     width: 6rem;
   }
 
-  .social,
-  .email {
+  .social, .email {
     text-align: left;
-  }
-
-  .social a {
-    margin-right: 0.325rem;
   }
 
   .social {
     padding-bottom: 1rem;
   }
+
   .social img {
     width: 2.2em;
   }
@@ -300,6 +296,10 @@ label {
 
   .footernav li {
     margin-right: 0.25rem;
+  }
+
+  .kaybow a {
+    color: #A0744E;
   }
 }
 
@@ -339,7 +339,7 @@ label {
     padding-bottom: 0;
   }
 
-  .social a {
+  .badge {
     margin-right: 0.325rem;
   }
 

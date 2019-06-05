@@ -32,14 +32,14 @@ const Footer = props => (
 
     <div className="pad-t-1-2">
 
-      <div className="pad-t-1-4 social">
-        <a href="https://www.facebook.com/AtelierDelska/">
+      <div className="social">
+        <a className="badge" href="https://www.facebook.com/AtelierDelska/">
           <img alt="Facebook" src={facebookIcon} />
         </a>
-        <a href="https://www.pinterest.ca/cwmargaret67/">
+        <a className="badge" href="https://www.pinterest.ca/cwmargaret67/">
           <img alt="Pinterest" src={pinterestIcon} />
         </a>
-        <a href="https://delska.blog/">
+        <a className="badge" href="https://delska.blog/">
           <img alt="Wordpress" src={wordPressIcon} />
         </a>
         <a href="https://www.instagram.com/atelierdelska/">
@@ -48,7 +48,7 @@ const Footer = props => (
       </div>
     </div>
 
-    <div className="pico">
+    <div className="kaybow pico">
       <a href="http://kaybow.design/" className="pico push-0">
         kaybow design | www.kaybow.design. All rights reserved.
       </a>
