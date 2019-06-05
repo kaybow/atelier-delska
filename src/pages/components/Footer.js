@@ -31,9 +31,6 @@ const Footer = props => (
     </div>
 
     <div className="pad-t-1-2">
-      <div className="email nano email">
-        <a className="push-0">caitlin@delska.ca</a>
-      </div>
 
       <div className="pad-t-1-4 social">
         <a href="https://www.facebook.com/AtelierDelska/">
@@ -42,7 +39,7 @@ const Footer = props => (
         <a href="https://www.pinterest.ca/cwmargaret67/">
           <img alt="Pinterest" src={pinterestIcon} />
         </a>
-        <a href="">
+        <a href="https://delska.blog/">
           <img alt="Wordpress" src={wordPressIcon} />
         </a>
         <a href="https://www.instagram.com/atelierdelska/">
