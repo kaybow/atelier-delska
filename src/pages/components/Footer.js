@@ -11,16 +11,16 @@ const Footer = props => (
       <nav className="footernav unit xs-2-3 s-2-3 m-2-3 l-2-3 micro grid">
         <ol className="push-0">
           <li>
-            <a href="index.html">home |</a>
+            <a href="/">home |</a>
           </li>
           <li>
-            <a href="designs.html">custom designs |</a>
+            <a href="designs">custom designs |</a>
           </li>
           <li>
-            <a href="about.html">about the atelier |</a>
+            <a href="about">about the atelier |</a>
           </li>
           <li>
-            <a href="contact.html">get in touch</a>
+            <a href="contact">get in touch</a>
           </li>
         </ol>
       </nav>

@@ -44,7 +44,7 @@ const IndexPage = () => (
                 <br />
                 handcrafted detail
               </h1>
-              <a className="micro button" href="designs.html">
+              <a className="micro button" href="designs">
                 VIEW CUSTOM DESIGNS
               </a>
             </div>
