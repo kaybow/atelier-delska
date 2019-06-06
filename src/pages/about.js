@@ -128,7 +128,7 @@ const About = props => {
         </div>
 
         <div className="pad-b text-center">
-          <a className="micro button2" href="contact.html">
+          <a className="micro button2" href="contact">
             LET'S WORK TOGETHER
           </a>
         </div>
