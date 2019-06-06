@@ -29,6 +29,14 @@ h6 {
   font-weight: normal;
 }
 
+h3 {
+  color: #003B44;
+}
+
+h5 {
+  color: #005562;
+}
+
 header {
   height: 12%;
   min-height: 80px;
@@ -147,24 +155,10 @@ h5 {
   color: #fff;
 }
 
-.fineprint {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.fineprint2 {
-  border-width: 1px;
-  border-color: #d5d5d5;
-  border-style: solid;
-}
-
-.fineprint2 p {
-  margin-bottom: 0;
-}
-
 .workingtogether {
-  margin-right: 25%;
-  margin-left: 25%;
+  padding-right: 20%;
+  padding-left: 20%;
+  background-color: #F9F6F4;
 }
 
 .about {

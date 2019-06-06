@@ -13,10 +13,10 @@ const About = props => {
       <Header />
 
       <main>
-        <div className="pad-b">
+        <div>
 
           <div className="grid">
-            <div className="unit xs-1 s-1 m-1-3 l-1-3 portrait">
+            <div className="unit xs-1 s-1 m-1 l-1-3 portrait">
               <div className="embed embed--1by1">
                 <img
                   className="embed__item"
@@ -26,8 +26,9 @@ const About = props => {
               </div>
             </div>
 
-            <div className="unit xs-1 s-1 m-2-3 l-2-3">
-              <p className="about gutter">
+            <div className="unit xs-1 s-1 m-1 l-2-3 about gutter">
+              <h3>about the atelier</h3>
+              <p>
                 It was a love of people—their history, language and culture that
                 originally drew me to the study of fashion history during my
                 time at Mount Allison University. As I continued my studies in
@@ -56,10 +57,10 @@ const About = props => {
           </div>
         </div>
 
-        <div>
+        <div className="workingtogether pad-t pad-b">
           <h3 className="text-center">working together</h3>
 
-          <div className="workingtogether text-center">
+            <div className="text-center">
                 <div>
                   <h5>design vision and consultation</h5>
                   <p>
@@ -101,37 +102,34 @@ const About = props => {
                   </p>
                 </div>
 
+                <div>
+                  <p className="nano">
+                    All orders require a non-refundable deposit of 50% before the
+                    start of work. You may also provide the materials directly in
+                    person, or place an online order to be shipped to my workspace.
+                    <br />
+                    <br />
+                    Final payment is due prior to delivery of the garment at the
+                    last fitting. Please allow a minimum of one month for any
+                    commissioned project to be completed.
+                    <br />
+                    <br />
+                    <i>
+                      If you have allergies to cats or dogs we may not be the best
+                      fit, as my studio is attached to a home with pets.
+                    </i>
+                  </p>
+                </div>
+
+                <div className="pad-b text-center">
+                  <a className="micro button2" href="contact">
+                    LET'S WORK TOGETHER
+                  </a>
+                </div>
+
             </div>
           </div>
 
-        <div className="pad-b fineprint">
-          <div className="unit xs-1 s-1 m-1 l-1 number">
-            <div className="fineprint2">
-              <p className="island-1-2 text-center">
-                All orders require a non-refundable deposit of 50% before the
-                start of work. You may also provide the materials directly in
-                person, or place an online order to be shipped to my workspace.
-                <br />
-                <br />
-                Final payment is due prior to delivery of the garment at the
-                last fitting. Please allow a minimum of one month for any
-                commissioned project to be completed.
-                <br />
-                <br />
-                <i>
-                  If you have allergies to cats or dogs we may not be the best
-                  fit, as my studio is attached to a home with pets.
-                </i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="pad-b text-center">
-          <a className="micro button2" href="contact">
-            LET'S WORK TOGETHER
-          </a>
-        </div>
       </main>
 
       <Footer />
