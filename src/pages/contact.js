@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
-import map from "../images/map.jpg";
 import studio from "../images/studio.jpg";
 
 const Contact = props => {
