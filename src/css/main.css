@@ -295,6 +295,10 @@ label {
   .kaybow a {
     color: #A0744E;
   }
+
+  .kaybow a:hover {
+  color: #511C05;
+  }
 }
 
 @media only screen and (min-width: 38em) {
