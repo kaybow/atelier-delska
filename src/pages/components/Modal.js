@@ -18,13 +18,13 @@ const Modal = props => (
             </button>
           </div>
 
-          <div className="unit xs-1 s-1 m-2-3 l-2-3">
+          <div className="unit xs-2-3 s-2-3 m-2-3 l-2-3">
             <div className="embed embed--1by1">
               <img className="embed__item" src={props.image} alt="" />
             </div>
           </div>
 
-          <div className="unit xs-1 s-1 m-1-3 l-1-3">
+          <div className="unit xs-1-3 s-1-3 m-1-3 l-1-3">
             <div className="embed embed--1by1">
               <img className="embed__item" src={placeHolder1} alt="" />
             </div>

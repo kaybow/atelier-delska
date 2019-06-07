@@ -12,9 +12,9 @@ html {
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 50%;
+  width: 90%;
   position: absolute;
-  left: 25%;
+  left: 5%;
   top: 5%;
   z-index: 11;
 }
@@ -36,13 +36,21 @@ html {
 }
 
 .btn-close {
-  color: #999;
+  color: #003B44;
   text-decoration: none;
   border: 0;
 }
 
 .btn-close:hover {
-  color: black;
+  color: #008D9B;
 }
 
+@media only screen and (min-width: 60em) {
 
+.modal {
+  width: 50%;
+  left: 25%;
+  top: 5%;
+  }
+
+}
