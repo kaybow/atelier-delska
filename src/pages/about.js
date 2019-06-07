@@ -103,7 +103,7 @@ const About = props => {
                 </div>
 
                 <div>
-                  <p className="nano">
+                  <p className="fineprint nano">
                     All orders require a non-refundable deposit of 50% before the
                     start of work. You may also provide the materials directly in
                     person, or place an online order to be shipped to my workspace.
