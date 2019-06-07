@@ -18,7 +18,7 @@ const LoadingOverlay = styled.div`
 const LoadingContent = styled.div`
   ${sharedStyles}
   background: #000;
-  opacity: 0.5;
+  opacity: 0.7;
 `;
 
 const Children = styled.div`
