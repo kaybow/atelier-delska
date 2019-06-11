@@ -8,7 +8,7 @@ import Modal from "./Modal";
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0.325rem;
+  grid-gap: 0;
 
   > .garmentContainer {
     grid-column: span 3;
