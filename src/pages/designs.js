@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -6,63 +7,130 @@ import PageHead from "../components/PageHead";
 
 import Gallery from "./components/Gallery";
 
-const imageSrcFromEdges = edges =>
+const TEXT = "txt";
+
+const categoryList = ["accessories", "corsetry", "historical", "vintage"];
+
+const designsByCategory = (files, category) =>
+  files
+    .filter(file => file.dir.includes(category))
+    .reduce((directories, file) => {
+      const designName = file.dir.substring(
+        file.dir.lastIndexOf("/") + 1,
+        file.dir.length
+      );
+
+      if (!directories.includes(designName)) {
+        directories.push(designName);
+      }
+
+      return directories;
+    }, []);
+
+const imageSrcOrNull = node =>
+  node.childImageSharp ? node.childImageSharp.fluid.src : null;
+
+const designFiles = edges =>
   edges.map(edge => ({
     name: edge.node.name,
-    src: edge.node.childImageSharp.fluid.src
+    dir: edge.node.dir,
+    extension: edge.node.extension,
+    relativePath: edge.node.relativePath,
+    src: imageSrcOrNull(edge.node)
   }));
 
-const Designs = ({ data }) => (
-  <>
-    <PageHead title="Designs" />
-    <Header />
+const fileIsOfDesign = design => file => file.dir.includes(design);
 
-    <div className="grid filter">
-      <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
-        <h6>
-          <a href="">
-            historical
-            <br />
-            couture
-          </a>
-        </h6>
-      </div>
-      <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
-        <h6>
-          <a href="">
-            vintage
-            <br />
-            day dresses
-          </a>
-        </h6>
-      </div>
-      <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
-        <h6>
-          <a href="">
-            custom
-            <br />
-            corsetry
-          </a>
-        </h6>
-      </div>
-      <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
-        <h6>
-          <a href="">
-            handmade
-            <br />
-            vintage accessories
-          </a>
-        </h6>
-      </div>
-    </div>
+const designDescription = files => files.find(file => file.extension === TEXT);
+const designImages = files => files.filter(file => file.extension !== TEXT);
 
-    <main>
-      <Gallery images={imageSrcFromEdges(data.allFile.edges)} />
-    </main>
+const categoryDesigns = (files, category) => {
+  const designList = designsByCategory(files, category);
 
-    <Footer />
-  </>
-);
+  return designList.map(design => ({
+    design,
+    images: designImages(files.filter(fileIsOfDesign(design))),
+    description: designDescription(files.filter(fileIsOfDesign(design)))
+  }));
+};
+
+const designCategories = edges => {
+  const files = designFiles(edges);
+
+  return categoryList.reduce((designCategories, category) => {
+    designCategories[category] = {
+      designs: categoryDesigns(files, category)
+    };
+    return designCategories;
+  }, {});
+};
+
+const CategoryBtn = styled.div`
+  height: 100%;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+`;
+
+const Designs = ({ data }) => {
+  const [selectedCategory, setSelectedCategory] = useState("historical");
+
+  return (
+    <>
+      <PageHead title="Designs" />
+      <Header />
+
+      <div className="grid filter">
+        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+          <h6>
+            <CategoryBtn onClick={() => setSelectedCategory("historical")}>
+              historical
+              <br />
+              couture
+            </CategoryBtn>
+          </h6>
+        </div>
+        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+          <h6>
+            <CategoryBtn onClick={() => setSelectedCategory("vintage")}>
+              vintage
+              <br />
+              day dresses
+            </CategoryBtn>
+          </h6>
+        </div>
+        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+          <h6>
+            <CategoryBtn onClick={() => setSelectedCategory("corsetry")}>
+              custom
+              <br />
+              corsetry
+            </CategoryBtn>
+          </h6>
+        </div>
+        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+          <h6>
+            <CategoryBtn onClick={() => setSelectedCategory("accessories")}>
+              handmade
+              <br />
+              vintage accessories
+            </CategoryBtn>
+          </h6>
+        </div>
+      </div>
+
+      <main>
+        <Gallery
+          designCategories={designCategories(data.allFile.edges)}
+          selectedCategory={selectedCategory}
+        />
+      </main>
+
+      <Footer />
+    </>
+  );
+};
 
 /* 
     This is basically Gatsby Magic, queries automatically inject data
@@ -79,11 +147,15 @@ export const query = graphql`
     allFile(
       filter: {
         sourceInstanceName: { eq: "designs" }
-        extension: { regex: "/(jpeg|jpg|gif|png)/" }
+        extension: { regex: "/(jpeg|jpg|gif|png|txt)/" }
       }
     ) {
       edges {
         node {
+          name
+          dir
+          extension
+          relativePath
           childImageSharp {
             fluid {
               src
