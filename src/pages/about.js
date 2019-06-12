@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
-import atelier from "../images/caitlin-headshot.jpg";
+import atelier from "../images/caitlin-headshot.png";
 
 const About = props => {
   return (
@@ -15,18 +15,18 @@ const About = props => {
       <main>
         <div>
 
-          <div className="grid">
+          <div className="grid island about">
             <div className="unit xs-1 s-1 m-1 l-1-3 portrait">
               <div className="embed embed--1by1">
                 <img
                   className="embed__item"
-                  src="images/caitlin-headshot.jpg"
+                  src="images/caitlin-headshot.png"
                   src={atelier}
                 />
               </div>
             </div>
 
-            <div className="unit xs-1 s-1 m-1 l-2-3 about gutter">
+            <div className="unit xs-1 s-1 m-1 l-2-3 about-intro">
               <h3>about the atelier</h3>
               <p>
                 It was a love of people—their history, language and culture that

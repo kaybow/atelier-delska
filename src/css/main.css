@@ -162,6 +162,18 @@ h5 {
 }
 
 .about {
+  background-color: #005562;
+}
+
+.about h3, .about p {
+  color: #fff;
+}
+
+.about p {
+  margin-bottom: 0;
+}
+
+.about-intro {
   padding-left: 1.3rem;
 }
 
