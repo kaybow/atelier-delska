@@ -68,6 +68,12 @@ nav ol a:hover,
   color: #008d9b;
 }
 
+#designs #nav-designs a, 
+#about #nav-about a, 
+#contact #nav-contact a, {
+  color: #008d9b;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -189,6 +195,22 @@ footer ol {
   padding: 0;
 }
 
+.social, .email {
+  text-align: left;
+}
+
+.social {
+  padding-bottom: 1rem;
+}
+
+.social img {
+  width: 2em;
+}
+
+.badge {
+  margin-right: 0.325rem;
+}
+
 .category {
   background-color: #f1f1f1;
 }
@@ -284,18 +306,6 @@ label {
 
   .logosize {
     width: 6rem;
-  }
-
-  .social, .email {
-    text-align: left;
-  }
-
-  .social {
-    padding-bottom: 1rem;
-  }
-
-  .social img {
-    width: 2.2em;
   }
 
   .garment {

@@ -18,13 +18,13 @@ const Header = props => (
     <div className="unit xs-1 s-1 m-3-4 l-3-4">
       <nav className="push-t">
         <ol className="nano">
-          <li>
+          <li id="nav-designs">
             <a href="designs">CUSTOM DESIGNS</a>
           </li>
-          <li>
+          <li id="nav-about">
             <a href="about">ABOUT THE ATELIER</a>
           </li>
-          <li>
+          <li id="nav-contact">
             <a href="contact">GET IN TOUCH</a>
           </li>
         </ol>
