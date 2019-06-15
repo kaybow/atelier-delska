@@ -65,13 +65,14 @@ const Contact = props => {
           </section>
 
           <div class="unit xs-1 s-1 m-1 l-2-3">
-            <div class="embed embed--3by2">
-              <img
-                onclick="myFunction()"
-                class="embed__item"
-                src={studio}
-                alt=""
-              />
+            <div className="studio-container">
+              <div className="studio">
+              <div >
+              </div>
+              <p class="gutter-1-2">
+                Atalier Delska’s studio is located in Alexandria, 40 minutes east of Ottawa, Ontario.
+              </p>
+            </div>
             </div>
           </div>
         </div>

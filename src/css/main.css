@@ -29,6 +29,23 @@ h6 {
   font-weight: normal;
 }
 
+h1 {
+  color: #fff;
+  font-family: "Rochester", cursive;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  padding-top: 5rem;
+}
+
+h3 {
+  color: #003B44;
+}
+
+h5 {
+  margin-bottom: 0.75rem;
+  color: #005562;
+}
+
 header {
   height: 12%;
   min-height: 80px;
@@ -78,6 +95,20 @@ nav ol a:hover,
   position: relative;
 }
 
+.tagline {
+  text-align: right;
+  background-color: rgba(0, 85, 98, 0.75);
+  padding-bottom: 0.1rem;
+}
+
+.leaf {
+  width: 0.75rem;
+}
+
+.taglinetext {
+  color: #fff;
+}
+
 .banneroverlay {
   height: 100%;
   width: 100%;
@@ -92,16 +123,25 @@ nav ol a:hover,
   );
 }
 
-h1 {
-  color: #fff;
-  font-family: "Rochester", cursive;
-  font-size: 4rem;
-  line-height: 4.5rem;
-  padding-top: 5rem;
+.studio-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
 }
 
-h5 {
-  margin-bottom: 0.75rem;
+.studio {
+  background-image: url("../images/studio.jpg");
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.studio p {
+  text-align: left;
+  color: #fff;
+  background-color: rgba(0, 85, 98, 0.75);
+  padding-bottom: 0.1rem;
 }
 
 .button, .button2 {
@@ -137,20 +177,6 @@ h5 {
   border-color: #fff;
   color: #003B44;
   transition: 0.5s ease;
-}
-
-.tagline {
-  text-align: right;
-  background-color: rgba(0, 85, 98, 0.75);
-  padding-bottom: 0.1rem;
-}
-
-.leaf {
-  width: 0.75rem;
-}
-
-.taglinetext {
-  color: #fff;
 }
 
 .workingtogether {
@@ -265,7 +291,6 @@ label {
 label {
   padding-bottom: 1rem;
 }
-
 
 
 @media all and (max-width: 600px) {
