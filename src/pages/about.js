@@ -22,6 +22,7 @@ const About = props => {
             <div className="unit xs-1 s-1 m-1 l-1-3 portrait">
               <div className="embed embed--1by1">
                 <img
+                  alt="portrait of the atelier"
                   className="embed__item"
                   src="images/caitlin-headshot.png"
                   src={atelier}
@@ -67,6 +68,7 @@ const About = props => {
                 <div>
                   <img
                   className="illustration"
+                  alt="illustration of a dress form"
                   src="images/form.svg"
                   src={form}
                   />
@@ -84,6 +86,7 @@ const About = props => {
                 <div>
                   <img
                   className="illustration"
+                  alt="illustration of a measuring tape"
                   src="images/measuring.svg"
                   src={measuring}
                   />
@@ -101,6 +104,7 @@ const About = props => {
                 <div>
                   <img
                   className="illustration"
+                  alt="illustration of a pair of sewing scissors"
                   src="images/scissors.svg"
                   src={scissors}
                   />
