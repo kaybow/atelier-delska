@@ -35,7 +35,7 @@ const Contact = props => {
                     class="micro"
                     id="email"
                     type="email"
-                    placeholder="ex.'me@domain.com'"
+                    placeholder=""
                     name="email"
                     required
                   />
