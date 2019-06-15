@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
 import atelier from "../images/caitlin-headshot.png";
+import form from "../images/form.svg";
+import measuring from "../images/measuring.svg";
+import scissors from "../images/scissors.svg";
 
 const About = props => {
   return (
@@ -26,7 +29,7 @@ const About = props => {
               </div>
             </div>
 
-            <div className="unit xs-1 s-1 m-1 l-2-3 about-intro">
+            <div className="unit xs-1 s-1 m-1 l-2-3 aboutIntro">
               <h3>about the atelier</h3>
               <p>
                 It was a love of people—their history, language and culture that
@@ -62,6 +65,11 @@ const About = props => {
 
             <div className="text-center">
                 <div>
+                  <img
+                  className="illustration"
+                  src="images/form.svg"
+                  src={form}
+                  />
                   <h5>design vision and consultation</h5>
                   <p>
                     After an initial consultation in which we discuss your
@@ -74,6 +82,11 @@ const About = props => {
                 </div>
 
                 <div>
+                  <img
+                  className="illustration"
+                  src="images/measuring.svg"
+                  src={measuring}
+                  />
                   <h5>custom pattern creation</h5>
                   <p>
                     While an in-person fitting session for taking measurements
@@ -86,6 +99,11 @@ const About = props => {
                 </div>
 
                 <div>
+                  <img
+                  className="illustration"
+                  src="images/scissors.svg"
+                  src={scissors}
+                  />
                   <h5>garment construction and revisions</h5>
                   <p>
                     Typically, I will then fit a mock-up of your garment before

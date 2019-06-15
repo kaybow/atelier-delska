@@ -16,7 +16,7 @@ const Contact = props => {
 
         <div class="grid">
           <section class="unit xs-1 s-1 m-1 l-1-3 island contact">
-            <h4 class="intouch">get in touch</h4>
+            <h3 class="intouch">get in touch</h3>
             <div>
               <form
                 class="push-0"
