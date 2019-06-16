@@ -2,9 +2,11 @@ const TEXT = "txt";
 
 const categoryList = ["accessories", "corsetry", "historical", "vintage"];
 
+const inCategory = category => file => file.dir.includes(category)
+
 const designsByCategory = (files, category) =>
   files
-    .filter(file => file.dir.includes(category))
+    .filter(inCategory(category))
     .reduce((directories, file) => {
       const designName = file.dir.substring(
         file.dir.lastIndexOf("/") + 1,
@@ -17,6 +19,10 @@ const designsByCategory = (files, category) =>
 
       return directories;
     }, []);
+
+const markdownByCategory = (files, category) => {
+  return files.filter(file => file.path.includes(category));
+}
 
 const imageSrcOrNull = node =>
   node.childImageSharp ? node.childImageSharp.fluid.src : null;
@@ -32,25 +38,53 @@ const designFiles = edges =>
 
 const fileIsOfDesign = design => file => file.dir.includes(design);
 
-const designDescription = files => files.find(file => file.extension === TEXT);
 const designImages = files => files.filter(file => file.extension !== TEXT);
 
-const categoryDesigns = (files, category) => {
-  const designList = designsByCategory(files, category);
+const designMarkdown = (markdownList, design) => markdownList.find(file => file.path.includes(design));
 
-  return designList.map(design => ({
+const designTitle = (markdownList, design) => {
+  const markdown = designMarkdown(markdownList, design);
+  if(markdown) {
+    return markdown.title;
+  }
+  return null;
+}
+
+const designDescription = (markdownList, design) => {
+  const markdown = designMarkdown(markdownList, design);
+  if(markdown) {
+    return markdown.content;
+  }
+  return null;
+}
+
+const categoryDesigns = (category, imageFiles, markdowns) => {
+  const designList = designsByCategory(imageFiles, category);
+  const markdownList = markdownByCategory(markdowns, category);
+
+  const temp =  designList.map(design => ({
     design,
-    images: designImages(files.filter(fileIsOfDesign(design))),
-    description: designDescription(files.filter(fileIsOfDesign(design)))
+    images: designImages(imageFiles.filter(fileIsOfDesign(design))),
+    description: designDescription(markdownList, design),
+    title: designTitle(markdownList, design)
   }));
+  console.log(temp)
+  return temp;
 };
 
-export const designCategories = edges => {
-  const files = designFiles(edges);
+const markdownFiles = edges => edges.map(({node}) => ({
+   content: node.html,
+   path: node.fileAbsolutePath,
+   title: node.frontmatter.title
+}));
+
+export const designCategories = (imageEdges, markdownEdges) => {
+  const imageFiles = designFiles(imageEdges);
+  const markdown = markdownFiles(markdownEdges);
 
   return categoryList.reduce((designCategories, category) => {
     designCategories[category] = {
-      designs: categoryDesigns(files, category)
+      designs: categoryDesigns(category, imageFiles, markdown)
     };
     return designCategories;
   }, {});

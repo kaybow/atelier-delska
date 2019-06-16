@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageHead from "../components/PageHead";
 
+import {Link} from "gatsby";
+
 import atelier from "../images/caitlin-headshot.png";
 import form from "../images/form.svg";
 import measuring from "../images/measuring.svg";
@@ -144,9 +146,9 @@ const About = props => {
                 </div>
 
                 <div className="pad-b text-center">
-                  <a className="micro button2" href="contact">
+                  <Link className="micro button2" to="/contact">
                     LET'S WORK TOGETHER
-                  </a>
+                  </Link>
                 </div>
 
             </div>

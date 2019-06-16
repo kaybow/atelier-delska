@@ -17,8 +17,17 @@ const CategoryBtn = styled.div`
   }
 `;
 
+const baseStyle = "unit xs-1-2 s-1-2 m-1-4 l-1-4 category";
+
 const Designs = ({ data }) => {
   const [selectedCategory, setSelectedCategory] = useState("historical");
+
+  const getStyle = category => {
+    if (category === selectedCategory) {
+      return `${baseStyle} selected-category`;
+    }
+    return baseStyle;
+  };
 
   return (
     <>
@@ -26,36 +35,48 @@ const Designs = ({ data }) => {
       <Header />
 
       <div className="grid filter">
-        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+        <div
+          className={getStyle("historical")}
+          onClick={() => setSelectedCategory("historical")}
+        >
           <h6>
-            <CategoryBtn onClick={() => setSelectedCategory("historical")}>
+            <CategoryBtn>
               historical
               <br />
               couture
             </CategoryBtn>
           </h6>
         </div>
-        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+        <div
+          className={getStyle("vintage")}
+          onClick={() => setSelectedCategory("vintage")}
+        >
           <h6>
-            <CategoryBtn onClick={() => setSelectedCategory("vintage")}>
+            <CategoryBtn>
               vintage
               <br />
               day dresses
             </CategoryBtn>
           </h6>
         </div>
-        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+        <div
+          className={getStyle("corsetry")}
+          onClick={() => setSelectedCategory("corsetry")}
+        >
           <h6>
-            <CategoryBtn onClick={() => setSelectedCategory("corsetry")}>
+            <CategoryBtn>
               custom
               <br />
               corsetry
             </CategoryBtn>
           </h6>
         </div>
-        <div className="unit xs-1-2 s-1-2 m-1-4 l-1-4 category">
+        <div
+          className={getStyle("accessories")}
+          onClick={() => setSelectedCategory("accessories")}
+        >
           <h6>
-            <CategoryBtn onClick={() => setSelectedCategory("accessories")}>
+            <CategoryBtn>
               handmade
               <br />
               vintage accessories
@@ -66,7 +87,10 @@ const Designs = ({ data }) => {
 
       <main>
         <Gallery
-          designCategories={designCategories(data.allFile.edges)}
+          designCategories={designCategories(
+            data.allFile.edges,
+            data.allMarkdownRemark.edges
+          )}
           selectedCategory={selectedCategory}
         />
       </main>

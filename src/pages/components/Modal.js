@@ -24,8 +24,7 @@ const designImageByPosition = (design, position) => {
 };
 
 const designDescription = design => {
-  console.log(design);
-  return design.description ? `${design.description.relativePath}` : "";
+  return {__html: design.description};
 };
 
 const Modal = ({ design, onCloseClick }) => (
@@ -67,10 +66,8 @@ const Modal = ({ design, onCloseClick }) => (
           </div>
 
           <div className="unit xs-1 s-1 m-1 l-1 text-content">
-            <h6 className="push-1-2 pad-t-1-2">Portfolio Piece Title</h6>
-            <p className="micro pad-b-1-2">
-              <object data={designDescription(design)} />
-            </p>
+            <h6 className="push-1-2 pad-t-1-2">{design.title}</h6>
+            <div dangerouslySetInnerHTML={designDescription(design)}/>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ const mainDesignImage = design =>
 
 const Gallery = ({ designCategories, selectedCategory }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedDesignName, setSelectedDesignName] = useState();
+  const [selectedDesignName, setSelectedDesignName] = useState(null);
 
   const handleCloseModal = () => {
     setModalOpen(false);

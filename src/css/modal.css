@@ -19,6 +19,10 @@ html {
   z-index: 11;
 }
 
+.modal h6 {
+  color: #005562;
+}
+
 .modal p {
   margin-bottom: 0px;
   line-height: 1.2rem;

@@ -1,6 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
+import {Link} from "gatsby";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -44,9 +45,9 @@ const IndexPage = () => (
                 <br />
                 handcrafted detail
               </h1>
-              <a className="micro button" href="designs">
+              <Link className="micro button" to="/designs">
                 VIEW CUSTOM DESIGNS
-              </a>
+              </Link>
             </div>
             <div className="gutter tagline">
               <img
