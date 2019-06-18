@@ -1,10 +1,10 @@
 import React from "react";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageHead from "../components/PageHead";
 
-import studio from "../images/studio.jpg";
+// import studio from "../images/studio.jpg";
 
 const Contact = props => {
   return (
@@ -13,7 +13,6 @@ const Contact = props => {
       <Header />
 
       <main>
-
         <div class="grid">
           <section class="unit xs-1 s-1 m-1 l-1-3 island contact">
             <h3 class="intouch">get in touch</h3>
@@ -67,16 +66,15 @@ const Contact = props => {
           <div class="unit xs-1 s-1 m-1 l-2-3">
             <div className="studio-container">
               <div className="studio">
-              <div >
+                <div />
+                <p class="gutter-1-2">
+                  Atalier Delska’s studio is located in Alexandria, 40 minutes
+                  east of Ottawa, Ontario.
+                </p>
               </div>
-              <p class="gutter-1-2">
-                Atalier Delska’s studio is located in Alexandria, 40 minutes east of Ottawa, Ontario.
-              </p>
-            </div>
             </div>
           </div>
         </div>
-
       </main>
 
       <Footer />

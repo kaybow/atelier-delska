@@ -1,9 +1,9 @@
 import React from "react";
 
-import facebookIcon from "../../images/social/socialmedia_facebook.png";
-import pinterestIcon from "../../images/social/socialmedia_pinterest.png";
-import wordPressIcon from "../../images/social/socialmedia_wordpress.png";
-import instagramIcon from "../../images/social/socialmedia_instagram.png";
+import facebookIcon from "../images/social/socialmedia_facebook.png";
+import pinterestIcon from "../images/social/socialmedia_pinterest.png";
+import wordPressIcon from "../images/social/socialmedia_wordpress.png";
+import instagramIcon from "../images/social/socialmedia_instagram.png";
 
 const Footer = props => (
   <footer className="island-1-2 gutter">
@@ -31,7 +31,6 @@ const Footer = props => (
     </div>
 
     <div className="pad-t-1-2">
-
       <div className="social">
         <a className="badge" href="https://www.facebook.com/AtelierDelska/">
           <img alt="Facebook" src={facebookIcon} />

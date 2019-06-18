@@ -1,10 +1,10 @@
 import React from "react";
 
 import styled from "styled-components";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageHead from "../components/PageHead";
 
 import leaf from "../images/leaf.png";
