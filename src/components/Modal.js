@@ -2,10 +2,10 @@ import React from "react";
 
 import Overlay from "./Overlay";
 
-import "../../css/modal.css";
+import "../css/modal.css";
 
-import placeHolder1 from "../../images/small-modal-img1.jpg";
-import placeHolder2 from "../../images/small-modal-img2.jpg";
+import placeHolder1 from "../images/small-modal-img1.jpg";
+import placeHolder2 from "../images/small-modal-img2.jpg";
 
 // TODO: remove duplicate in gallery.js
 const designImageByPosition = (design, position) => {
@@ -24,7 +24,7 @@ const designImageByPosition = (design, position) => {
 };
 
 const designDescription = design => {
-  return {__html: design.description};
+  return { __html: design.description };
 };
 
 const Modal = ({ design, onCloseClick }) => (
@@ -67,7 +67,7 @@ const Modal = ({ design, onCloseClick }) => (
 
           <div className="unit xs-1 s-1 m-1 l-1 text-content">
             <h6 className="push-1-2 pad-t-1-2">{design.title}</h6>
-            <div dangerouslySetInnerHTML={designDescription(design)}/>
+            <div dangerouslySetInnerHTML={designDescription(design)} />
           </div>
         </div>
       </div>
