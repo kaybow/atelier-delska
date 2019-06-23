@@ -17,8 +17,11 @@ const BackgroundWithImage = className => data => (
     className={className}
   >
     <div className="banneroverlay">
-      <div className="text-center island-1-2 gutter">
-        <h1 className="pad-b">
+      <div
+        className="text-center island-1-2 gutter"
+        style={{ paddingBottom: "10%" }}
+      >
+        <h1 className="pad-b" style={{ paddingTop: "10%" }}>
           historical and vintage creations
           <br />
           personalized patterns
@@ -84,19 +87,26 @@ const StyledBackground = styled(BackgroundSection)`
   background-size: cover;
 `;
 
+const IndexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Main = styled.main`
+  flex: 1;
+  height: 80vh;
+`;
+
 const IndexPage = ({ data }) => {
   return (
-    <>
+    <IndexContainer>
       <PageHead title="Home" />
-      <div className="main-container">
-        <Header />
-        <div className="banner-container">
-          <StyledBackground />
-        </div>
-      </div>
-
+      <Header />
+      <Main>
+        <StyledBackground />
+      </Main>
       <Footer />
-    </>
+    </IndexContainer>
   );
 };
 
