@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "gatsby";
+
 import facebookIcon from "../images/social/socialmedia_facebook.png";
 import pinterestIcon from "../images/social/socialmedia_pinterest.png";
 import wordPressIcon from "../images/social/socialmedia_wordpress.png";
@@ -11,16 +13,16 @@ const Footer = props => (
       <nav className="footernav unit xs-2-3 s-2-3 m-2-3 l-2-3 micro grid">
         <ol className="push-0">
           <li>
-            <a href="/">home |</a>
+            <Link to="/">home |</Link>
           </li>
           <li>
-            <a href="designs">custom designs |</a>
+            <Link to="/designs">custom designs |</Link>
           </li>
           <li>
-            <a href="about">about the atelier |</a>
+            <Link to="/about">about the atelier |</Link>
           </li>
           <li>
-            <a href="contact">get in touch</a>
+            <Link to="/contact">get in touch</Link>
           </li>
         </ol>
       </nav>
