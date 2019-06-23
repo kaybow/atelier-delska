@@ -9,7 +9,6 @@ import placeHolder2 from "../images/small-modal-img2.jpg";
 
 // TODO: remove duplicate in gallery.js
 const designImageByPosition = (design, position) => {
-  console.log(design);
   const image = design.images.find(
     image => image.name.substring(0, 1) === position.toString()
   );
