@@ -8,7 +8,7 @@
 
 .logosize {
   width: 5rem;
-}
+} 
 
 a {
   text-decoration: none;
@@ -37,6 +37,10 @@ h1 {
   padding-top: 5rem;
 }
 
+h2 {
+  color: #008D9B;
+}
+
 h3 {
   color: #003B44;
 }
@@ -47,7 +51,6 @@ h5 {
 }
 
 header {
-  height: 12%;
   min-height: 80px;
 }
 
@@ -77,9 +80,7 @@ nav ol a:hover,
   color: #008d9b;
 }
 
-#designs #nav-designs a, 
-#about #nav-about a, 
-#contact #nav-contact a, {
+.active-nav {
   color: #008d9b;
 }
 
@@ -91,7 +92,6 @@ nav ol a:hover,
 
 .banner-container {
   flex: 1;
-  height: 88%;
   position: relative;
 }
 
@@ -203,6 +203,10 @@ nav ol a:hover,
   height: 6rem;
 }
 
+.illustration-lrg {
+  height: 18rem;
+}
+
 footer {
   position: sticky;
 }
@@ -235,6 +239,11 @@ footer ol {
   background-color: #f1f1f1;
 }
 
+.selected-category {
+  background-color: rgba(0, 85, 98, 0.80);
+  color: #fff;
+}
+
 .category h6 {
   margin-left: 1.5rem;
   margin-top: 0.5rem;
@@ -244,11 +253,8 @@ footer ol {
 }
 
 .category:hover {
-  background-color: rgba(0, 85, 98, 0.75);
+  background-color: rgba(0, 85, 98, 0.50);
   transition: 0.5s ease;
-}
-
-.category:hover a {
   color: #fff;
 }
 
@@ -333,6 +339,10 @@ label {
   .garment {
     width: 100%;
     height: 100%;
+  }
+
+  .garmentContainer {
+    cursor: pointer;
   }
 
   .aboutIntro {
