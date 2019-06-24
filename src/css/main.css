@@ -37,6 +37,10 @@ h1 {
   padding-top: 5rem;
 }
 
+h2 {
+  color: #008D9B;
+}
+
 h3 {
   color: #003B44;
 }
@@ -197,6 +201,10 @@ nav ol a:hover,
 
 .illustration {
   height: 6rem;
+}
+
+.illustration-lrg {
+  height: 18rem;
 }
 
 footer {
