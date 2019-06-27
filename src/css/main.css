@@ -346,7 +346,7 @@ label {
     height: 100%;
   }
 
-  .garmentContainer {
+  .garmentContainer, .send-btn {
     cursor: pointer;
   }
 

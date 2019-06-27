@@ -47,6 +47,7 @@ html {
 
 .btn-close:hover {
   color: #008D9B;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 60em) {
