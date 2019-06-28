@@ -94,7 +94,7 @@ const IndexContainer = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  height: 80vh;
+  height: 85vh;
 `;
 
 const IndexPage = ({ data }) => {
