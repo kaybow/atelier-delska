@@ -10,6 +10,10 @@
   width: 5rem;
 } 
 
+.notfound {
+  margin-top: 5rem;
+}
+
 a {
   text-decoration: none;
   color: #003b44;
@@ -39,6 +43,7 @@ h1 {
 
 h2 {
   color: #008D9B;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -341,7 +346,7 @@ label {
     height: 100%;
   }
 
-  .garmentContainer {
+  .garmentContainer, .send-btn {
     cursor: pointer;
   }
 

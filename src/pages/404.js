@@ -1,26 +1,27 @@
 import React from "react"
 
-import { Link, graphql, StaticQuery } from "gatsby";
-import Layout from "../components/layout"
+import { Link } from "gatsby";
 import SEO from "../components/seo"
-import form from "../images/form.svg";
+import formnude from "../images/formnude.svg";
 
 const NotFoundPage = () => (
-  <Layout>
+
+  <>
     <SEO title="404: Not found" />
-    <div className="text-center">
+    <div className="text-center notfound">
      <img
-       className="illustration-lrg"
+       className="illustration-lrg pad-b"
        alt="illustration of a dress form"
-       src={form}
+       src={formnude}
      />
-     <h2>Sorry!</h2>
-     <h3>Page not found.</h3>
-     <Link className="micro button pad-b" to="/index">
-       BACK TO HOMEPAGE
+     <h2>Oops!</h2>
+     <h3 className="pad-b-1-2">Nothing to see here.</h3>
+     <Link className="micro button" to="/">
+       RETURN TO HOMEPAGE
      </Link>
     </div>
-  </Layout>
+  </>
+
 )
 
 export default NotFoundPage
