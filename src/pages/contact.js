@@ -68,7 +68,7 @@ const Contact = props => {
               <div className="studio">
                 <div />
                 <p className="gutter-1-2">
-                  Atalier Delska’s studio is located in Alexandria, 40 minutes
+                  Atelier Delska’s studio is located in Alexandria, 40 minutes
                   east of Ottawa, Ontario.
                 </p>
               </div>
