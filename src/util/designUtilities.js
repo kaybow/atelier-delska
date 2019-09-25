@@ -1,4 +1,5 @@
 const TEXT = "txt";
+const LOWEST_PRIORITY = 3;
 
 const categoryList = ["accessories", "corsetry", "historical", "vintage"];
 
@@ -49,6 +50,14 @@ const designTitle = (markdownList, design) => {
   return null;
 };
 
+const designPriority = (markdownList, design) => {
+  const markdown = designMarkdown(markdownList, design);
+  if (markdown) {
+    return markdown.priority || LOWEST_PRIORITY;
+  }
+  return LOWEST_PRIORITY;
+};
+
 const designDescription = (markdownList, design) => {
   const markdown = designMarkdown(markdownList, design);
   if (markdown) {
@@ -61,13 +70,14 @@ const categoryDesigns = (category, imageFiles, markdowns) => {
   const designList = designsByCategory(imageFiles, category);
   const markdownList = markdownByCategory(markdowns, category);
 
-  const temp = designList.map(design => ({
+  return designList.map(design => ({
     design,
     images: designImages(imageFiles.filter(fileIsOfDesign(design))),
     description: designDescription(markdownList, design),
-    title: designTitle(markdownList, design)
-  }));
-  return temp;
+    title: designTitle(markdownList, design),
+    priority: designPriority(markdownList, design)
+  })).sort((designA, designB) => designA.priority - designB.priority);
+
 };
 
 const markdownFiles = edges =>
