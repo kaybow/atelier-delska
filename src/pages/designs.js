@@ -53,9 +53,9 @@ const Designs = ({ data }) => {
         >
           <h6>
             <CategoryBtn>
-              vintage
+              bespoke
               <br />
-              day dresses
+              vintage designs
             </CategoryBtn>
           </h6>
         </div>

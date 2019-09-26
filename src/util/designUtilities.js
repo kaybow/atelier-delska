@@ -70,14 +70,19 @@ const categoryDesigns = (category, imageFiles, markdowns) => {
   const designList = designsByCategory(imageFiles, category);
   const markdownList = markdownByCategory(markdowns, category);
 
-  return designList.map(design => ({
+  const temp = designList.map(design => ({
     design,
     images: designImages(imageFiles.filter(fileIsOfDesign(design))),
     description: designDescription(markdownList, design),
     title: designTitle(markdownList, design),
     priority: designPriority(markdownList, design)
-  })).sort((designA, designB) => designA.priority - designB.priority);
+  })).sort((designA, designB) => {
+    // console.log(designA, designB); 
+    return designA.priority - designB.priority
+  });
 
+  console.log(temp.map(t => t.priority));
+  return temp;
 };
 
 const markdownFiles = edges =>
