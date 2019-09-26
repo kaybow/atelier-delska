@@ -49,7 +49,7 @@ const About = props => {
                 <br />
                 <br />
                 Atelier Delska was born with the intention of bringing the world
-                of slow fashion back to live with designs inspired by the past.
+                of slow fashion back to life with designs inspired by the past.
                 Each garment I craft is fitted and designed with care to be
                 unique to you.
                 <br />
@@ -91,7 +91,7 @@ const About = props => {
               <h5>custom pattern creation</h5>
               <p>
                 While an in-person fitting session for taking measurements is
-                recommend, if not possible, a garment will be made based on the
+                recommended, if not possible, a garment will be made based on the
                 measurements provided. I will then draft a fitted personalized
                 pattern that is customized for your garment.
                 <br />
