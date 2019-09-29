@@ -26,6 +26,8 @@ const Grid = styled.div`
   }
 `;
 
+// TODO: Rethink the filter so we could safety net the image file names
+// (sort alphabetically just in case the images don't have prefixes
 const mainDesignImage = design =>
   design.images.find(image => image.name.substring(0, 1) === "1");
 
